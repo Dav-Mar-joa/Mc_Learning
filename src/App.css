@@ -1,38 +1,61 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff5e6; /* fond clair type fast-food */
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #d21404; /* rouge McDo */
+  text-shadow: 1px 1px #fdd835; /* jaune McDo */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sandwich-card {
+  border: 2px solid #d21404;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 400px;
+  background: #fff8dc; /* beige clair */
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sandwich-card:hover {
+  transform: scale(1.05);
 }
 
-.App-link {
-  color: #61dafb;
+.sandwich-card h3 {
+  color: #d21404;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sandwich-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.sandwich-card ol {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.button {
+  background-color: #fdd835; /* jaune */
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #d21404;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background-color: #ffd700; /* un jaune plus vif */
 }
